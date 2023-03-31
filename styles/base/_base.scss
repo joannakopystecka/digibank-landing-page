@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $color-gray-light-2;
+}
+
+.section {
+  max-width: 80%;
+  margin: auto;
+  padding: 10rem 0 2rem;
+  opacity: 0;
+  transform: translateY(150px);
+
+  transition: all 1s ease;
+
+  &--reveal {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

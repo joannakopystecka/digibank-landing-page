@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DigiBank</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="nav">
+      <h4 class="nav__logo">DigiBank</h4>
+      <ul class="nav__links">
+        <li class="nav__item">
+          <a class="nav__link" href="#about">About</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#acc">Accounts</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="nav__item">
+          <button class="nav__link btn">Open Account</button>
+        </li>
+      </ul>
+    </nav>
+    <header class="header row">
+      <div class="header__title">
+        <h1 class="heading-primary u-margin-bottom-small">
+          New <span class="highlight">generation</span> of
+          <span class="highlight">banking</span>
+        </h1>
+        <h3 class="heading-tertiary u-margin-bottom-medium">
+          Secure, convenient banking with our mobile app
+        </h3>
+        <button class="btn">Open account</button>
+      </div>
+
+      <img class="header__img" src="images/heroo.jpg" alt="Mobile devices" />
+    </header>
+
+    <!-- ABOUT -->
+
+    <section class="section about row" id="about">
+      <div class="about__title">
+        <h2 class="heading-secondary">Why you should choose DigiBank?</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
+          perspiciatis, dolor aspernatur, impedit praesentium, eum ducimus
+          exercitationem a optio placeat veritatis consequatur harum beatae
+          illum.
+        </p>
+      </div>
+
+      <div class="about__boxes row">
+        <div class="about__box row">
+          <button class="about__btn">01</button>
+          <div class="about__details">
+            <h3>Online banking</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              esse ut eius saepe incidunt voluptatibus.
+            </p>
+          </div>
+        </div>
+
+        <div class="about__box row">
+          <button class="about__btn">02</button>
+          <div class="about__details">
+            <h3>Fast onboardnig</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              esse ut eius saepe incidunt voluptatibus.
+            </p>
+          </div>
+        </div>
+
+        <div class="about__box row">
+          <button class="about__btn">03</button>
+          <div class="about__details">
+            <h3>Open API</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              esse ut eius saepe incidunt voluptatibus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACCOUNTS -->
+
+    <section class="section acc" id="acc">
+      <h2 class="heading-secondary">
+        Choose an account tailored to your needs
+      </h2>
+
+      <div class="accounts">
+        <div class="accounts__btns">
+          <button
+            class="btn accounts__btn accounts__btn--1 accounts__btn--active"
+            data-tab="1"
+          >
+            Standard
+          </button>
+          <button class="btn accounts__btn accounts__btn--2" data-tab="2">
+            Business
+          </button>
+          <button class="btn accounts__btn accounts__btn--3" data-tab="3">
+            Kid
+          </button>
+        </div>
+
+        <div
+          class="accounts__content accounts__content--1 accounts__content--active"
+        >
+          <h4>Standard Account</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+            facere, laudantium ratione quibusdam voluptas id consequatur nobis
+            veritatis ipsa sequi quidem magni quae et enim pariatur incidunt
+            rerum atque.
+          </p>
+        </div>
+
+        <div class="accounts__content accounts__content--2">
+          <h4>Business Account</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+            facere, laudantium ratione quibusdam voluptas id consequatur nobis
+            veritatis ipsa sequi quidem magni quae et enim pariatur incidunt
+            rerum atque.
+          </p>
+        </div>
+
+        <div class="accounts__content accounts__content--3">
+          <h4>Account for kids</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+            facere, laudantium ratione quibusdam voluptas id consequatur nobis
+            veritatis ipsa sequi quidem magni quae et enim pariatur incidunt
+            rerum atque.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+
+    <section class="section testimonials" id="testimonials">
+      <h2 class="heading-secondary">
+        Millions of users are already using DigiBank. Join them!
+      </h2>
+
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class="testimonial">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Distinctio excepturi, nemo dolore unde accusamus sed dolorem modi
+              fuga provident omnis minima adipisci? Quod, animi architecto?
+              Tempora quia sunt ipsam. Illo natus non laudantium sapiente autem
+              dolorum, fugiat corrupti veritatis facilis. Voluptates voluptatem
+              nobis architecto est. Eos excepturi corrupti sequi!
+            </p>
+            <div class="testimonial__author row">
+              <img
+                class="testimonial__img"
+                src="images/user-1.jpg"
+                alt="Photo of Alisson Smith"
+              />
+
+              <h6 class="testimonial__name">Alisson Smith</h6>
+              <p class="tesimonial__location">New York, USA</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="testimonial">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Distinctio excepturi, nemo dolore unde accusamus sed dolorem modi
+              fuga provident omnis minima adipisci? Quod, animi architecto?
+              Tempora quia sunt ipsam. Illo natus non laudantium sapiente autem
+              dolorum, fugiat corrupti veritatis facilis. Voluptates voluptatem
+              nobis architecto est. Eos excepturi corrupti sequi!
+            </p>
+            <div class="testimonial__author row">
+              <img
+                class="testimonial__img"
+                src="images/user-2.jpg"
+                alt="Photo of Błażej Kowalski"
+              />
+              <h6 class="testimonial__name">Błażej Kowalski</h6>
+              <p class="tesimonial__location">Warsaw, Poland</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="testimonial">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Distinctio excepturi, nemo dolore unde accusamus sed dolorem modi
+              fuga provident omnis minima adipisci? Quod, animi architecto?
+              Tempora quia sunt ipsam. Illo natus non laudantium sapiente autem
+              dolorum, fugiat corrupti veritatis facilis. Voluptates voluptatem
+              nobis architecto est. Eos excepturi corrupti sequi!
+            </p>
+            <div class="testimonial__author row">
+              <img
+                class="testimonial__img"
+                src="images/user-3.jpg"
+                alt="Photo of Hans Zimmer"
+              />
+              <h6 class="testimonial__name">Hans Zimmer</h6>
+              <p class="tesimonial__location">Berlin, Germany</p>
+            </div>
+          </div>
+        </div>
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quas
+        assumenda fugiat ad dignissimos officia totam nulla dolores voluptatem?
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

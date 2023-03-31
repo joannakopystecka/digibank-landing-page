@@ -1,0 +1,40 @@
+.acc {
+  h2 {
+    text-align: center;
+  }
+}
+
+.accounts {
+  max-width: 80%;
+  margin: 8rem auto 0 auto;
+
+  background-color: #fff;
+
+  &__btns {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn {
+    margin-right: 2.5rem;
+    transform: translateY(-50%);
+
+    &:hover {
+      transform: translateY(-53%);
+    }
+
+    &--active {
+      transform: translateY(-66%);
+      background: $gradient-secondary;
+    }
+  }
+
+  &__content {
+    display: none;
+    padding: 2.5rem 6rem 6rem;
+
+    &--active {
+      display: grid;
+    }
+  }
+}

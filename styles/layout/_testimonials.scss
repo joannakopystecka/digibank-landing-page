@@ -1,0 +1,33 @@
+.testimonials {
+  h2 {
+    text-align: center;
+  }
+}
+
+.testimonial {
+  width: 65%;
+  position: relative;
+
+  p {
+    margin-bottom: 1.5rem;
+  }
+
+  &__author {
+    grid-template-columns: 6rem 1fr;
+  }
+
+  &__img {
+    grid-row: 1 / span 2;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+  }
+
+  &__name {
+    font-size: 1.2rem;
+  }
+
+  &__location {
+    font-size: 0.8rem;
+  }
+}

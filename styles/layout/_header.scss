@@ -1,0 +1,16 @@
+.header {
+  height: 87vh;
+  max-width: 80%;
+  margin: auto;
+  grid-template-columns: 3fr 2fr;
+  gap: 3rem;
+  align-content: center;
+  justify-content: center;
+
+  align-items: center;
+  justify-items: center;
+
+  &__img {
+    height: 70vh;
+  }
+}

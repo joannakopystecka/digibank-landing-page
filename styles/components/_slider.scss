@@ -1,0 +1,76 @@
+.slider {
+  max-width: 100rem;
+  height: 25rem;
+  margin: 0 auto;
+  position: relative;
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+
+    border: none;
+    background: rgb(230, 230, 230);
+    font-family: inherit;
+    color: $color-blue;
+    height: 3rem;
+    width: 3rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+
+    &--left {
+      left: 6%;
+      transform: translate(-50%, -50%);
+    }
+
+    &--right {
+      right: 6%;
+      transform: translate(50%, -50%);
+    }
+  }
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 1s;
+}
+
+.slider__btn .slider__btn .dots {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dots__dot {
+  border: none;
+  background-color: #b9b9b9;
+  opacity: 0.7;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-right: 1.75rem;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  /* Only necessary when overlying images */
+  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
+}
+
+.dots__dot:last-child {
+  margin: 0;
+}
+
+.dots__dot--active {
+  background-color: $color-blue;
+  opacity: 1;
+}
