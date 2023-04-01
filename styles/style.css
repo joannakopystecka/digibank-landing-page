@@ -13,8 +13,7 @@ body {
 
 .section {
   max-width: 80%;
-  margin: auto;
-  padding: 10rem 0 2rem;
+  margin: 10rem auto;
   opacity: 0;
   transform: translateY(150px);
   transition: all 1s ease;
@@ -177,6 +176,10 @@ p {
   opacity: 1;
 }
 
+#about {
+  scroll-margin-top: 21rem;
+}
+
 .about {
   grid-template-columns: 2fr 3fr;
   gap: 8rem;
@@ -205,6 +208,10 @@ p {
   margin-bottom: 3.5rem;
 }
 
+#acc {
+  scroll-margin-top: 20rem;
+}
+
 .acc h2 {
   text-align: center;
 }
@@ -223,7 +230,7 @@ p {
   transform: translateY(-50%);
 }
 .accounts__btn:hover {
-  transform: translateY(-53%);
+  transform: translateY(-66%);
 }
 .accounts__btn--active {
   transform: translateY(-66%);
@@ -294,6 +301,10 @@ p {
   background-color: #eeeeee;
   transition: all 0.3s;
   opacity: 0.95;
+}
+
+#testimonials {
+  scroll-margin-top: 20rem;
 }
 
 .testimonials h2 {

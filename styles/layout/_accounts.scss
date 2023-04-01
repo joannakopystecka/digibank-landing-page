@@ -1,3 +1,7 @@
+#acc {
+  scroll-margin-top: 20rem;
+}
+
 .acc {
   h2 {
     text-align: center;
@@ -20,7 +24,7 @@
     transform: translateY(-50%);
 
     &:hover {
-      transform: translateY(-53%);
+      transform: translateY(-66%);
     }
 
     &--active {

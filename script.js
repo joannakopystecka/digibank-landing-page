@@ -2,6 +2,9 @@
 
 const nav = document.querySelector(".nav");
 const allSection = document.querySelectorAll(".section");
+const accBtns = document.querySelectorAll(".accounts__btn");
+const accBtnsContainer = document.querySelector(".accounts__btns");
+const accContent = document.querySelectorAll(".accounts__content");
 
 //Nav animations
 const handleHover = function (e) {
@@ -25,7 +28,6 @@ window.addEventListener("scroll", function () {
 });
 
 //Reveal section
-
 window.addEventListener("scroll", function () {
   const triggerBottom = window.innerHeight;
 
@@ -38,4 +40,20 @@ window.addEventListener("scroll", function () {
       box.classList.remove("section--reveal");
     }
   });
+});
+
+//Account tabs
+accBtnsContainer.addEventListener("click", function (e) {
+  const clicked = e.target.closest(".accounts__btn");
+
+  if (!clicked) return;
+
+  accBtns.forEach((b) => b.classList.remove("accounts__btn--active"));
+  accContent.forEach((c) => c.classList.remove("accounts__content--active"));
+
+  clicked.classList.add("accounts__btn--active");
+
+  document
+    .querySelector(`.accounts__content--${clicked.dataset.tab}`)
+    .classList.add("accounts__content--active");
 });
