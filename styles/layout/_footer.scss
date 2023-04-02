@@ -1,4 +1,35 @@
 .footer {
+  grid-template-columns: 5rem 2fr 1fr;
+  gap: 10rem;
   background-color: $color-primary;
-  padding: 5rem;
+  padding: 3rem 10rem;
+
+  &__links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__social-media--links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 7rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: $color-gray-light;
+    text-decoration: none;
+  }
+
+  &__link:hover {
+    color: $color-blue;
+  }
+
+  svg {
+    fill: $color-gray-light;
+
+    &:hover {
+      fill: $color-blue;
+    }
+  }
 }
