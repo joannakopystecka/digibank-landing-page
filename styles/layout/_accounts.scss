@@ -12,7 +12,8 @@
   max-width: 80%;
   margin: 8rem auto 0 auto;
 
-  background-color: #fff;
+  background-color: $color-white;
+  box-shadow: 0 1rem 3rem rgba(#000, 0.2);
 
   &__btns {
     display: flex;
