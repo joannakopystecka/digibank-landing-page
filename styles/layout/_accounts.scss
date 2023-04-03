@@ -10,10 +10,18 @@
 
 .accounts {
   max-width: 80%;
-  margin: 8rem auto 0 auto;
+  margin: 8rem auto 0;
 
   background-color: $color-white;
   box-shadow: 0 1rem 3rem rgba(#000, 0.2);
+
+  @include respond(tab-land) {
+    max-width: 100%;
+  }
+
+  @include respond(phone) {
+    margin: 5rem auto 0;
+  }
 
   &__btns {
     display: flex;
@@ -21,8 +29,19 @@
   }
 
   &__btn {
-    margin-right: 2.5rem;
     transform: translateY(-50%);
+
+    &:not(:last-child) {
+      margin-right: 2.5rem;
+
+      @include respond(tab-port) {
+        margin-right: 1rem;
+      }
+
+      @include respond(phone) {
+        margin-right: 0.5rem;
+      }
+    }
 
     &:hover {
       transform: translateY(-66%);
@@ -37,6 +56,10 @@
   &__content {
     display: none;
     padding: 2.5rem 6rem 6rem;
+
+    @include respond(phone) {
+      padding: 2rem;
+    }
 
     &--active {
       display: grid;

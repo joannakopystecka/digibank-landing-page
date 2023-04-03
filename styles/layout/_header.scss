@@ -10,7 +10,19 @@
   align-items: center;
   justify-items: center;
 
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+  }
+
   &__img {
     height: 70vh;
+
+    @include respond(tab-land) {
+      height: 25rem;
+    }
+
+    @include respond(phone) {
+      height: 17rem;
+    }
   }
 }

@@ -7,8 +7,9 @@
   padding: 0 6rem;
   z-index: 100;
 
-  &__logo {
-    color: $color-blue;
+  @include respond(tab-port) {
+    height: 6rem;
+    padding: 0;
   }
 
   &__links {
@@ -16,10 +17,30 @@
     align-items: center;
     list-style: none;
     text-decoration: none;
+
+    @include respond(tab-port) {
+      position: fixed;
+      top: 6rem;
+      width: 100%;
+      height: 50vh;
+      background-color: $color-gray-light;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 90;
+      transform: translateX(-100%);
+      transition: transform 0.5s;
+    }
   }
 
   &__item {
     margin-left: 4rem;
+
+    @include respond(tab-port) {
+      margin: 0;
+    }
   }
 
   &__link:link,
@@ -29,10 +50,38 @@
     display: block;
     transition: all 0.3s;
   }
+
+  &__logo {
+    margin-left: 2rem;
+  }
+
+  .menu-toggle {
+    display: none;
+
+    @include respond(tab-port) {
+      display: block;
+      font-size: 2.2rem;
+      position: absolute;
+      top: 2.7rem;
+      transform: translateY(-50%);
+      right: 2rem;
+      cursor: pointer;
+      z-index: 100;
+    }
+    svg {
+      fill: $color-blue;
+    }
+  }
 }
 
 .sticky {
   position: fixed;
   background-color: $color-gray-light;
   transition: all 0.3s;
+}
+
+.open {
+  .nav__links {
+    transform: translateX(0%);
+  }
 }

@@ -7,6 +7,11 @@
   scroll-behavior: smooth;
 }
 
+html {
+  width: 100vw;
+  max-width: 100%;
+}
+
 body {
   background-color: $color-gray-light-2;
 }
@@ -22,6 +27,11 @@ body {
   transform: translateY(150px);
 
   transition: all 1s ease;
+
+  @include respond(phone) {
+    width: 90%;
+    margin: 5rem auto;
+  }
 
   &--reveal {
     transform: translateY(0px);

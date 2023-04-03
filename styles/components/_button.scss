@@ -11,6 +11,10 @@
   font-size: 1rem;
   transition: all 0.3s;
 
+  @include respond(phone) {
+    padding: 0.7rem 1.5rem;
+  }
+
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);

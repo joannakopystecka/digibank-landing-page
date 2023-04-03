@@ -1,9 +1,17 @@
 .slider {
-  max-width: 100rem;
+  max-width: 80%;
   height: 25rem;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+
+  @include respond(tab-land) {
+    max-width: 100%;
+  }
+
+  @include respond(tab-port) {
+    height: 29rem;
+  }
 
   &__btn {
     position: absolute;
@@ -18,6 +26,11 @@
     width: 3rem;
     font-size: 2.5rem;
     cursor: pointer;
+
+    @include respond(phone) {
+      height: 1.8rem;
+      width: 1.8rem;
+    }
 
     &--left {
       left: 6%;

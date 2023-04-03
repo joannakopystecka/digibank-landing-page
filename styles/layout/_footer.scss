@@ -1,24 +1,59 @@
 .footer {
   grid-template-columns: 5rem 2fr 1fr;
-  gap: 10rem;
+  gap: 8%;
   background-color: $color-primary;
-  padding: 3rem 10rem;
+  padding: 3rem 10%;
+
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    justify-items: center;
+    padding: 3rem;
+    text-align: center;
+  }
 
   &__links {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
+    @include respond(tab-port) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    margin: 0 1rem;
+
+    @include respond(tab-port) {
+      margin: 1rem;
+    }
   }
 
   &__social-media--links {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-left: 7rem;
+
+    @include respond(tab-port) {
+      margin: 0;
+    }
+  }
+
+  &__social-media--item {
+    margin: 1.5rem;
   }
 
   &__link:link,
   &__link:visited {
     color: $color-gray-light;
     text-decoration: none;
+    @include respond(tab-port) {
+      margin: 5rem;
+    }
   }
 
   &__link:hover {

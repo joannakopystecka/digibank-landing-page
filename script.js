@@ -5,6 +5,12 @@ const allSection = document.querySelectorAll(".section");
 const accBtns = document.querySelectorAll(".accounts__btn");
 const accBtnsContainer = document.querySelector(".accounts__btns");
 const accContent = document.querySelectorAll(".accounts__content");
+const menuToggler = document.querySelector(".menu-toggle");
+const body = document.querySelector("body");
+
+menuToggler.addEventListener("click", function () {
+  body.classList.toggle("open");
+});
 
 //Nav animations
 const handleHover = function (e) {
