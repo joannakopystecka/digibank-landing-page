@@ -220,7 +220,7 @@ p {
 }
 @media (max-width: 900px) {
   .slider {
-    height: 29rem;
+    height: 30rem;
   }
 }
 .slider__btn {
@@ -279,6 +279,12 @@ p {
   margin-right: 1.75rem;
   cursor: pointer;
   transition: all 0.5s;
+}
+@media (max-width: 900px) {
+  .dots__dot {
+    height: 0.5rem;
+    width: 0.5rem;
+  }
 }
 .dots__dot:last-child {
   margin: 0;
